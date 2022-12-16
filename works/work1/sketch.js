@@ -5,6 +5,13 @@ function setup() {
     .getElementById("p5Canvas")
     .getBoundingClientRect();
   let canvas = createCanvas(boundingRects.width, boundingRects.height);
+  console.log(1);
+  console.log(
+    document.getElementById("p5Canvas").getBoundingClientRect().width
+  );
+  console.log(
+    document.getElementById("p5Canvas").getBoundingClientRect().height
+  );
   canvas.parent("p5Canvas");
   let tileWidth = width / (howManyX + 1);
   let tileHeight = height / (howManyY + 1);
