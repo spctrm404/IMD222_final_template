@@ -7,23 +7,18 @@
 
 .container {
   height: 100dvh;
-  display: flex;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: 1fr;
-  // align-items: center;
-  // justify-items: stretch;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
-  justify-content: center;
+  justify-items: stretch;
   margin-inline: auto;
   padding: 1rem;
   max-width: 40rem;
 }
 
 #p5Canvas {
-  flex-grow: 1;
   aspect-ratio: 1 / 1;
-  // overflow: hidden;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
